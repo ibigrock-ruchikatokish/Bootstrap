@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title> 
+		Online Book Store
+	</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 
+	Always include the viewport <meta> tag inside the <head> section of your document to enable touch zooming and ensure proper rendering on mobile devices. Also include the X-UA-Compatible meta tag with edge mode, which tells the Internet Explorer to display the webpage in the highest mode available.
+	-->
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	 <!-- Optional Bootstrap theme -->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Allerta">	
+	<link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Allan">	  
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<script src='bootstrap-3.3.7-dist/js/bootstrap.js'></script>	
+</head>
+<body>
+	<header>
+		<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand"> La Bibliothèque </a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle Navigation </span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<ul id="ul-main-menu" class="nav nav-pills navbar-right collapse navbar-collapse" > 
+			<!-- 
+			collapse : element is made collapsable
+			navbar-collapse : element is made collapsable only in xs mode
+			-->
+				<li class="main-menu"><a href="#about-section-image-1" target="_self"> ABOUT US </a>
+				<ul>
+				</ul>
+				</li>
+				<li class="main-menu"><a href="#new-arrival-section" target="_self"> NEW ARRIVALS </a>
+					<ul class="ul-sub-menu navbar-toggle">
+						<!--
+							navbar-toggle : hide element
+						-->
+						<li class="sub-menu">Hard Copy
+							<ul class="ul-sub-sub-menu">
+								<li class="sub-sub-menu"><a href="#"> Fiction </a></li>
+								<li class="sub-sub-menu"><a href="#"> Non Fiction </a></li>
+								<li class="sub-sub-menu"><a href="#"> Magazines </a></li>
+								<li class="sub-sub-menu"><a href="#"> Literature </a></li>
+							</ul>
+						</li>	
+						<li class="sub-menu">e-Books
+							<ul class="ul-sub-sub-menu">
+								<li class="sub-sub-menu"><a href="#"> Fiction </a></li>
+								<li class="sub-sub-menu"><a href="#"> Non Fiction </a></li>
+								<li class="sub-sub-menu"><a href="#"> Magazines </a></li>
+								<li class="sub-sub-menu"><a href="#"> Literature </a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="main-menu"><a href="#best-seller-section" target="_self"> BEST SELLERS </a>
+					<ul class="ul-sub-menu navbar-toggle">
+						<li class="sub-menu">Hard Copy
+							<ul class="ul-sub-sub-menu">
+								<li class="sub-sub-menu"><a href="#"> Fiction </a></li>
+								<li class="sub-sub-menu"><a href="#"> Non Fiction </a></li>
+								<li class="sub-sub-menu"><a href="#"> Magazines </a></li>
+								<li class="sub-sub-menu"><a href="#"> Literature </a></li>
+							</ul>
+						</li>	
+						<li class="sub-menu">e-Books
+							<ul class="ul-sub-sub-menu">
+								<li class="sub-sub-menu"><a href="#"> Fiction </a></li>
+								<li class="sub-sub-menu"><a href="#"> Non Fiction </a></li>
+								<li class="sub-sub-menu"><a href="#"> Magazines </a></li>
+								<li class="sub-sub-menu"><a href="#"> Literature </a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="main-menu"><a href="#our-collection-section" target="_self"> OUR COLLECTION </a>
+					<ul class="ul-sub-menu navbar-toggle">
+						<li class="sub-menu">Hard Copy
+							<ul class="ul-sub-sub-menu">
+								<li class="sub-sub-menu"><a href="#"> Fiction </a></li>
+								<li class="sub-sub-menu"><a href="#"> Non Fiction </a></li>
+								<li class="sub-sub-menu"><a href="#"> Magazines </a></li>
+								<li class="sub-sub-menu"><a href="#"> Literature </a></li>
+							</ul>
+						</li>	
+						<li class="sub-menu">e-Books
+							<ul class="ul-sub-sub-menu">
+								<li class="sub-sub-menu"><a href="#"> Fiction </a></li>
+								<li class="sub-sub-menu"><a href="#"> Non Fiction </a></li>
+								<li class="sub-sub-menu"><a href="#"> Magazines </a></li>
+								<li class="sub-sub-menu"><a href="#"> Literature </a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="main-menu"><a href="#author-section" target="_self"> AUTHORS </a>
+					<ul class="ul-sub-menu navbar-toggle">
+						<li class="sub-menu">Hard Copy
+							<ul class="ul-sub-sub-menu">
+								<li class="sub-sub-menu"><a href="#"> Fiction </a></li>
+								<li class="sub-sub-menu"><a href="#"> Non Fiction </a></li>
+								<li class="sub-sub-menu"><a href="#"> Magazines </a></li>
+								<li class="sub-sub-menu"><a href="#"> Literature </a></li>
+							</ul>
+						</li>	
+						<li class="sub-menu">e-Books
+							<ul class="ul-sub-sub-menu">
+								<li class="sub-sub-menu"><a href="#"> Fiction </a></li>
+								<li class="sub-sub-menu"><a href="#"> Non Fiction </a></li>
+								<li class="sub-sub-menu"><a href="#"> Magazines </a></li>
+								<li class="sub-sub-menu"><a href="#"> Literature </a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="main-menu"><a href="#write-to-us" target="_self"> WRITE TO US </a> 
+				<ul>
+				</ul>
+				</li>
+			</ul>	
+		</div>
+		</div>
+	</header>
+
+	<div class="container" id="content-section"> 
+	<section class="row container" id="about-section">
+			<img  id="about-section-image-1" class="col-xs-12 col-sm-12 col-md-12" src="images/Books.jpg" alt="about-section-image-1"  />
+			<img id="about-section-temp-background" class="col-xs-12 col-sm-12 col-md-12" src="images/BlackWall.png" alt="about-section-temp-background" />
+			<h2 id="about-section-image-1-caption" class="col-xs-12 col-sm-12 col-md-12"><span>Welcome to the world of books</span></h2>
+	</section>
+	 
+	<section class="row container" id="new-arrival-section">
+		<div id="new-arrival-heading">
+			<h2>NEW ARRIVALS</h2>
+			<hr>
+		</div>
+		<div id="new-arrival-list">
+			<button class="previous" >&#10094;</button>
+				<a href="#" class="new-arrivals " >
+					<figure>
+						<img src="images/TheFix.jpg" alt="The Fix" class="img-new-arrivals"/>
+						<figcaption>The Fix</figcaption>
+					</figure>	
+				</a>
+				<a href="#" class="new-arrivals ">
+					<figure>
+						<img src="images/AnythingIsPossible.jpg" alt="Anything Is Possible" class="img-new-arrivals"/>
+						<figcaption>Anything Is Possible</figcaption>
+					</figure>	
+				</a>
+				<a href="#" class="new-arrivals">
+					<figure>
+						<img src="images/NightSchool.jpg" alt="Night School" class="img-new-arrivals"/>
+						<figcaption>Night School</figcaption>
+					</figure>	
+				</a>
+				<a href="#" class="new-arrivals ">
+					<figure>
+						<img src="images/TheWhistler.jpg" alt="The Whistler" class="img-new-arrivals" />
+						<figcaption>The Whistler</figcaption>
+					</figure>
+				</a>
+				<!-- <a href="#" class="new-arrivals "> -->
+					<!-- <figure> -->
+						<!-- <img src="images/TheWhistler.jpg" alt="The Whistler" class="img-new-arrivals" /> -->
+						<!-- <figcaption>The Whistler</figcaption> -->
+					<!-- </figure> -->
+				<!-- </a> -->
+				<!-- <a href="#" class="new-arrivals "> -->
+					<!-- <figure> -->
+						<!-- <img src="images/TheWhistler.jpg" alt="The Whistler" class="img-new-arrivals" /> -->
+						<!-- <figcaption>The Whistler</figcaption> -->
+					<!-- </figure> -->
+				<!-- </a> -->
+				<!-- <a href="#" class="new-arrivals "> -->
+					<!-- <figure> -->
+						<!-- <img src="images/TheWhistler.jpg" alt="The Whistler" class="img-new-arrivals" /> -->
+						<!-- <figcaption>The Whistler</figcaption> -->
+					<!-- </figure> -->
+				<!-- </a> -->
+			<button class="next" >&#10095;</button>	
+		</div>
+	</section>
+	
+	<section class="row container" id="best-seller-section">
+		<div id="best-seller-heading">
+			<h2>BEST SELLERS</h2>
+			<hr>
+		</div>
+		<div id="best-seller-list">
+			<button class="previous" >&#10094;</button>
+				<a href="#" class="best-sellers">
+					<figure>
+						<img src="images/TheLostOrder.jpg" alt="The Lost Order" class="img-best-sellers" />
+						<figcaption>The Lost Order</figcaption>
+					</figure>	
+				</a>
+				<a href="#" class="best-sellers">
+					<figure>
+						<img src="images/Magic.jpg" alt="Magic" class="img-best-sellers" />
+						<figcaption>Magic</figcaption>
+					</figure>	
+				</a>
+				<a href="#" class="best-sellers">
+					<figure>
+						<img src="images/HarryPotterAndTheCursedChild.jpg" alt="Harry Potter And The Cursed Child" class="img-best-sellers" />
+						<figcaption>Harry Potter And The Cursed Child</figcaption>
+					</figure>	
+				</a>
+				<a href="#" class="best-sellers">
+					<figure>
+						<img src="images/1984GeorgeOrwell.jpg" alt="1984" class="img-best-sellers" />
+						<figcaption>1984</figcaption>
+					</figure>	
+				</a>
+				<!-- <a href="#" class="best-sellers"> -->
+					<!-- <figure> -->
+						<!-- <img src="images/KaneAndAbel.jpg" alt="Kane And Abel" class="img-best-sellers"/> -->
+						<!-- <figcaption>Kane And Abel</figcaption> -->
+					<!-- </figure>	 -->
+				<!-- </a> -->
+				<!-- <a href="#" class="best-sellers"> -->
+					<!-- <figure> -->
+						<!-- <img src="images/KaneAndAbel.jpg" alt="Kane And Abel" class="img-best-sellers"/> -->
+						<!-- <figcaption>Kane And Abel</figcaption> -->
+					<!-- </figure>	 -->
+				<!-- </a> -->
+				<!-- <a href="#" class="best-sellers"> -->
+					<!-- <figure> -->
+						<!-- <img src="images/KaneAndAbel.jpg" alt="Kane And Abel" class="img-best-sellers"/> -->
+						<!-- <figcaption>Kane And Abel</figcaption> -->
+					<!-- </figure>	 -->
+				<!-- </a> -->
+			<button class="next" >&#10095;</button>
+		</div> 
+	</section> 
+	<section class="row container" id="combined-section-1">
+	<section class="col-md-6" id="our-collection-section">
+		<div id="our-collection-heading">
+			<h2>OUR COLLECTION</h2>	
+			<hr>
+		</div>
+		<div id="our-collection-list">
+			<button class="previous" >&#10094;</button>
+				<a href="#" class="our-collection">
+					<figure>
+						<img src="images/HarryPotterAndTheDeathlyHallows.jpg" alt="Harry Potter" class="img-our-collection"/>
+						<figcaption>Harry Potter</figcaption>
+					</figure>	
+				</a>
+				<a href="#" class="our-collection">
+					<figure>
+						<img src="images/SherlockHolmes.jpg" alt="Sherlock Holmes" class="img-our-collection" />
+						<figcaption>Sherlock Holmes</figcaption>
+					</figure>	
+				</a>
+				<a href="#" class="our-collection">
+					<figure>
+						<img src="images/TheChroniclesOfNarnia.jpg" alt="The Chronicles Of Narnia" class="img-our-collection" />
+						<figcaption>The Chronicles Of Narnia</figcaption>
+					</figure>	
+				</a>
+				<a href="#" class="our-collection">
+					<figure>
+						<img src="images/TheHungerGames.jpg" alt="The Hunger Games" class="img-our-collection" />
+						<figcaption>The Hunger Games</figcaption>
+					</figure>
+				</a>
+				<!-- <a href="#" class="our-collection"> -->
+					<!-- <figure> -->
+						<!-- <img src="images/DanBrown-DaVinciCode.jpg" alt="Dan Brown" class="img-our-collection" /> -->
+						<!-- <figcaption>Dan Brown</figcaption> -->
+					<!-- </figure> -->
+				<!-- </a> -->
+				<!-- <a href="#" class="our-collection"> -->
+					<!-- <figure> -->
+						<!-- <img src="images/DanBrown-DaVinciCode.jpg" alt="Dan Brown" class="img-our-collection" /> -->
+						<!-- <figcaption>Dan Brown</figcaption> -->
+					<!-- </figure> -->
+				<!-- </a> -->
+				<!-- <a href="#" class="our-collection"> -->
+					<!-- <figure> -->
+						<!-- <img src="images/DanBrown-DaVinciCode.jpg" alt="Dan Brown" class="img-our-collection" /> -->
+						<!-- <figcaption>Dan Brown</figcaption> -->
+					<!-- </figure> -->
+				<!-- </a> -->
+			<button class="next" >&#10095;</button>	
+		</div> 
+	</section>	
+	<section class="col-md-6" id="author-section">
+		<div id="author-heading">
+			<h2>AUTHORS</h2>
+			<hr>
+		</div>
+		<div id="authors-list">
+			<a href="#AgathaChristie" class="authors" >Agatha Christie</a>
+			<a href="#AlanMoore" class="authors" >Alan Moore</a>
+			<a href="#AlbertCamus" class="authors" >Albert Camus</a>
+			<a href="#CSLewis" class="authors" >C.S. Lewis</a>
+			<a href="#DaleCarnegie" class="authors" >Dale Carnegie</a>
+			<a href="#DanBrown" class="authors" >Dan Brown</a>
+			<a href="#DanielleSteel" class="authors" >Danielle Steel</a>
+			<a href="#DavidBaldacci" class="authors" >David Baldacci</a>
+			<a href="#DavidFosterWallace" class="authors" >David Foster Wallace</a>
+			<a href="#DrSeuss" class="authors">Dr. Seuss</a>
+			<a href="#EdithWharton" class="authors">Edith Wharton</a>
+			<a href="#FScottFitzgerald" class="authors">F. Scott Fitzgerald</a>
+			<a href="#FernandoPessoa" class="authors">Fernando Pessoa</a>
+			<a href="#GeorgeBernardShaw" class="authors">George Bernard Shaw</a>
+			<a href="#GeorgeEliot" class="authors">George Eliot</a>
+			<a href="#GeorgeOrwell" class="authors">George Orwell</a>
+			<a href="#HGWells" class="authors">H. G. Wells</a>
+			<a href="#HarperLee" class="authors">Harper Lee</a>
+			<a href="#HenryMiller" class="authors">Henry Miller</a>
+			<a href="#JKRowling" class="authors">JK Rowling</a>
+			<a href="#JefferyArcher" class="authors">Jeffery Archer</a>
+			<a href="#MarkTwain" class="authors">Mark Twain</a>
+		</div>
+	</section>
+	</section>
+	<section class="row container" id="combined-section-2">
+	<section class="col-md-6" id="map">
+			<img src="images/Map.jpg" alt="Map" height="500"/>
+	</section>	
+	<section class="col-md-6" id="write-to-us">
+	<section id="write-to-us-heading">
+		<h2>WRITE TO US</h2>
+		<hr>
+	</section>
+	<section>
+		Name : <input id="name" type="text" />
+		E-Mail Id : <input id="email" type="email" />
+		Contact No : <input id="tel" type="tel" />
+		Suggestion : <textarea id="suggestion" cols="21" rows="6"> </textarea>
+	</section>
+	</section>
+	</section>
+    </div>  
+	<footer id="combined-section-3">
+		<div class="container">
+			<section class="col-md-12" id="footer-section-1">
+				<div class="col-md-4" id="footer-left-section-1">
+				<b>HELP</b>
+				<a href="#">Help Center</a>
+				<a href="#">Item Support</a>
+				</div>
+				<div class="col-md-4" id="footer-center-section-1">
+				<b>JOIN OUR COMMUNITY</b>
+				<a href="#">Community</a>
+				<a href="#">Blog</a>
+				</div>
+				<div class="col-md-4" id="footer-right-section-1">
+				<p>Sign up to hear about special sales and more delivered to your inbox!</p>
+				<button type="button" class="btn btn-sm btn-default">SIGN UP</button>
+				</div>
+			</section>
+			<hr>
+			<section class="col-md-12" id="footer-section-2">
+				<div class="col-md-6" id="footer-left-section-2">
+				<span><a href="#">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Privacy Policy</a></span>
+				Copyrights ©2017 All Rights Reserved by La Bibliothèque Inc.
+				</div>
+				<div class="col-md-6" id="footer-right-section-2">
+					<i class="fa fa-camera-retro fa-2x">&nbsp;&nbsp;</i>
+					<i class="fa fa-twitter-square fa-2x">&nbsp;&nbsp;</i>
+					<i class="fa fa-facebook-square fa-2x">&nbsp;&nbsp;</i>
+					<i class="fa fa-google-plus-circle fa-2x">&nbsp;&nbsp;</i>
+					<i class="fa fa-rss-square fa-2x">&nbsp;&nbsp;</i>
+				</div>
+			</section>
+		</div>
+	</footer>
+</body>
+</html>
