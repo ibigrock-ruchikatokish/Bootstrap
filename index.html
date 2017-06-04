@@ -22,11 +22,12 @@
           href="https://fonts.googleapis.com/css?family=Allan">	  
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 	<script src='bootstrap-3.3.7-dist/js/bootstrap.js'></script>	
+	<script src='bootstrap-3.3.7-dist/js/bootstrap.min.js'></script>	
 </head>
 <body>
 	<header>
 		<div class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
+		<div class="container" id="header">
 			<div class="navbar-header">
 				<a href="#" class="navbar-brand"> La Bibliothèque </a>
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -41,94 +42,126 @@
 			collapse : element is made collapsable
 			navbar-collapse : element is made collapsable only in xs mode
 			-->
-				<li class="main-menu"><a href="#about-section-image-1" target="_self"> ABOUT US </a>
+				<li class="main-menu list-unstyled"><a href="#about-section-image-1" target="_self"> ABOUT US </a>
 				<ul>
 				</ul>
 				</li>
-				<li class="main-menu"><a href="#new-arrival-section" target="_self"> NEW ARRIVALS </a>
-					<ul class="ul-sub-menu navbar-toggle">
+				<li class="main-menu list-unstyled nav"><a href="#new-arrival-section" target="_self" > NEW ARRIVALS </a>
+					<ul class="ul-sub-menu navbar-toggle nav dropdown-menu">
 						<!--
 							navbar-toggle : hide element
 						-->
-						<li class="sub-menu">Hard Copy
-							<ul class="ul-sub-sub-menu">
-								<li class="sub-sub-menu"><a href="#"> Fiction </a></li>
-								<li class="sub-sub-menu"><a href="#"> Non Fiction </a></li>
-								<li class="sub-sub-menu"><a href="#"> Magazines </a></li>
-								<li class="sub-sub-menu"><a href="#"> Literature </a></li>
+						<li class="sub-menu list-unstyled collapse navbar-collapse"><a href="#">Fiction</a>
+							<ul class="ul-sub-sub-menu nav">
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> e-Books </a></li>
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> Hard Cover </a></li>
 							</ul>
 						</li>	
-						<li class="sub-menu">e-Books
-							<ul class="ul-sub-sub-menu">
-								<li class="sub-sub-menu"><a href="#"> Fiction </a></li>
-								<li class="sub-sub-menu"><a href="#"> Non Fiction </a></li>
-								<li class="sub-sub-menu"><a href="#"> Magazines </a></li>
-								<li class="sub-sub-menu"><a href="#"> Literature </a></li>
+						<li class="sub-menu list-unstyled collapse navbar-collapse"><a href="#">Non Fiction</a>
+							<ul class="ul-sub-sub-menu nav">
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> e-Books </a></li>
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> Hard Cover </a></li>
+							</ul>
+						</li>
+						<li class="sub-menu list-unstyled collapse navbar-collapse"><a href="#">Magazines</a>
+							<ul class="ul-sub-sub-menu nav">
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> e-Books </a></li>
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> Hard Cover </a></li>
+							</ul>
+						</li>
+						<li class="sub-menu list-unstyled collapse navbar-collapse"><a href="#">Anthologies</a>
+							<ul class="ul-sub-sub-menu nav">
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> e-Books </a></li>
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> Hard Cover </a></li>
 							</ul>
 						</li>
 					</ul>
 				</li>
-				<li class="main-menu"><a href="#best-seller-section" target="_self"> BEST SELLERS </a>
-					<ul class="ul-sub-menu navbar-toggle">
-						<li class="sub-menu">Hard Copy
-							<ul class="ul-sub-sub-menu">
-								<li class="sub-sub-menu"><a href="#"> Fiction </a></li>
-								<li class="sub-sub-menu"><a href="#"> Non Fiction </a></li>
-								<li class="sub-sub-menu"><a href="#"> Magazines </a></li>
-								<li class="sub-sub-menu"><a href="#"> Literature </a></li>
+				<li class="main-menu list-unstyled nav"><a href="#best-seller-section" target="_self" > BEST SELLERS </a>
+					<ul class="ul-sub-menu navbar-toggle nav dropdown-menu" >
+						<li class="sub-menu list-unstyled nav">Fiction
+							<ul class="ul-sub-sub-menu nav">
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> e-Books </a></li>
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> Hard Cover </a></li>
 							</ul>
 						</li>	
-						<li class="sub-menu">e-Books
-							<ul class="ul-sub-sub-menu">
-								<li class="sub-sub-menu"><a href="#"> Fiction </a></li>
-								<li class="sub-sub-menu"><a href="#"> Non Fiction </a></li>
-								<li class="sub-sub-menu"><a href="#"> Magazines </a></li>
-								<li class="sub-sub-menu"><a href="#"> Literature </a></li>
+						<li class="sub-menu list-unstyled nav">Non Fiction
+							<ul class="ul-sub-sub-menu nav">
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> e-Books </a></li>
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> Hard Cover </a></li>
+							</ul>
+						</li>
+						<li class="sub-menu list-unstyled nav">Magazines
+							<ul class="ul-sub-sub-menu nav">
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> e-Books </a></li>
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> Hard Cover </a></li>
+							</ul>
+						</li>
+						<li class="sub-menu list-unstyled nav">Anthologies
+							<ul class="ul-sub-sub-menu nav">
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> e-Books </a></li>
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> Hard Cover </a></li>
 							</ul>
 						</li>
 					</ul>
 				</li>
-				<li class="main-menu"><a href="#our-collection-section" target="_self"> OUR COLLECTION </a>
-					<ul class="ul-sub-menu navbar-toggle">
-						<li class="sub-menu">Hard Copy
-							<ul class="ul-sub-sub-menu">
-								<li class="sub-sub-menu"><a href="#"> Fiction </a></li>
-								<li class="sub-sub-menu"><a href="#"> Non Fiction </a></li>
-								<li class="sub-sub-menu"><a href="#"> Magazines </a></li>
-								<li class="sub-sub-menu"><a href="#"> Literature </a></li>
+				<li class="main-menu list-unstyled nav"><a href="#our-collection-section" target="_self" > OUR COLLECTION </a>
+					<ul class="ul-sub-menu navbar-toggle nav dropdown-menu" >
+						<li class="sub-menu list-unstyled">Fiction
+							<ul class="ul-sub-sub-menu nav">
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> e-Books </a></li>
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> Hard Cover </a></li>
 							</ul>
 						</li>	
-						<li class="sub-menu">e-Books
-							<ul class="ul-sub-sub-menu">
-								<li class="sub-sub-menu"><a href="#"> Fiction </a></li>
-								<li class="sub-sub-menu"><a href="#"> Non Fiction </a></li>
-								<li class="sub-sub-menu"><a href="#"> Magazines </a></li>
-								<li class="sub-sub-menu"><a href="#"> Literature </a></li>
+						<li class="sub-menu list-unstyled nav">Non Fiction
+							<ul class="ul-sub-sub-menu nav">
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> e-Books </a></li>
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> Hard Cover </a></li>
+							</ul>
+						</li>
+						<li class="sub-menu list-unstyled nav">Magazines
+							<ul class="ul-sub-sub-menu nav">
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> e-Books </a></li>
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> Hard Cover </a></li>
+							</ul>
+						</li>
+						<li class="sub-menu list-unstyled nav">Anthologies
+							<ul class="ul-sub-sub-menu nav">
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> e-Books </a></li>
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> Hard Cover </a></li>
 							</ul>
 						</li>
 					</ul>
 				</li>
-				<li class="main-menu"><a href="#author-section" target="_self"> AUTHORS </a>
-					<ul class="ul-sub-menu navbar-toggle">
-						<li class="sub-menu">Hard Copy
-							<ul class="ul-sub-sub-menu">
-								<li class="sub-sub-menu"><a href="#"> Fiction </a></li>
-								<li class="sub-sub-menu"><a href="#"> Non Fiction </a></li>
-								<li class="sub-sub-menu"><a href="#"> Magazines </a></li>
-								<li class="sub-sub-menu"><a href="#"> Literature </a></li>
+				<li class="main-menu list-unstyled nav"><a href="#author-section" target="_self" > AUTHORS </a>
+					<ul class="ul-sub-menu navbar-toggle nav dropdown-menu">
+						<li class="sub-menu list-unstyled nav">Fiction
+							<ul class="ul-sub-sub-menu nav">
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> e-Books </a></li>
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> Hard Cover </a></li>
 							</ul>
 						</li>	
-						<li class="sub-menu">e-Books
-							<ul class="ul-sub-sub-menu">
-								<li class="sub-sub-menu"><a href="#"> Fiction </a></li>
-								<li class="sub-sub-menu"><a href="#"> Non Fiction </a></li>
-								<li class="sub-sub-menu"><a href="#"> Magazines </a></li>
-								<li class="sub-sub-menu"><a href="#"> Literature </a></li>
+						<li class="sub-menu list-unstyled nav">Non Fiction
+							<ul class="ul-sub-sub-menu nav">
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> e-Books </a></li>
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> Hard Cover </a></li>
+							</ul>
+						</li>
+						<li class="sub-menu list-unstyled nav ">Non Fiction
+							<ul class="ul-sub-sub-menu nav">
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> e-Books </a></li>
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> Hard Cover </a></li>
+							</ul>
+						</li>
+						<li class="sub-menu list-unstyled nav">Magazines
+							<ul class="ul-sub-sub-menu nav">
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> e-Books </a></li>
+								<li class="sub-sub-menu collapse navbar-collapse"><a href="#"> Hard Cover </a></li>
 							</ul>
 						</li>
 					</ul>
 				</li>
-				<li class="main-menu"><a href="#write-to-us" target="_self"> WRITE TO US </a> 
+				<li class="main-menu list-unstyled nav"><a href="#write-to-us" target="_self"> WRITE TO US </a> 
 				<ul>
 				</ul>
 				</li>
@@ -151,48 +184,30 @@
 		</div>
 		<div id="new-arrival-list">
 			<button class="previous" >&#10094;</button>
-				<a href="#" class="new-arrivals " >
-					<figure>
-						<img src="images/TheFix.jpg" alt="The Fix" class="img-new-arrivals"/>
-						<figcaption>The Fix</figcaption>
-					</figure>	
-				</a>
-				<a href="#" class="new-arrivals ">
-					<figure>
-						<img src="images/AnythingIsPossible.jpg" alt="Anything Is Possible" class="img-new-arrivals"/>
-						<figcaption>Anything Is Possible</figcaption>
-					</figure>	
-				</a>
-				<a href="#" class="new-arrivals">
-					<figure>
-						<img src="images/NightSchool.jpg" alt="Night School" class="img-new-arrivals"/>
-						<figcaption>Night School</figcaption>
-					</figure>	
-				</a>
-				<a href="#" class="new-arrivals ">
-					<figure>
-						<img src="images/TheWhistler.jpg" alt="The Whistler" class="img-new-arrivals" />
-						<figcaption>The Whistler</figcaption>
-					</figure>
-				</a>
-				<!-- <a href="#" class="new-arrivals "> -->
-					<!-- <figure> -->
-						<!-- <img src="images/TheWhistler.jpg" alt="The Whistler" class="img-new-arrivals" /> -->
-						<!-- <figcaption>The Whistler</figcaption> -->
-					<!-- </figure> -->
-				<!-- </a> -->
-				<!-- <a href="#" class="new-arrivals "> -->
-					<!-- <figure> -->
-						<!-- <img src="images/TheWhistler.jpg" alt="The Whistler" class="img-new-arrivals" /> -->
-						<!-- <figcaption>The Whistler</figcaption> -->
-					<!-- </figure> -->
-				<!-- </a> -->
-				<!-- <a href="#" class="new-arrivals "> -->
-					<!-- <figure> -->
-						<!-- <img src="images/TheWhistler.jpg" alt="The Whistler" class="img-new-arrivals" /> -->
-						<!-- <figcaption>The Whistler</figcaption> -->
-					<!-- </figure> -->
-				<!-- </a> -->
+					<a href="#" class="new-arrivals item active">
+						<figure>
+							<img src="images/TheFix.jpg" alt="The Fix" class="img-new-arrivals"/>
+							<figcaption>The Fix</figcaption>
+						</figure>	
+					</a>
+					<a href="#" class="new-arrivals">
+						<figure>
+							<img src="images/AnythingIsPossible.jpg" alt="Anything Is Possible" class="img-new-arrivals"/>
+							<figcaption>Anything Is Possible</figcaption>
+						</figure>	
+					</a>
+					<a href="#" class="new-arrivals">
+						<figure>
+							<img src="images/NightSchool.jpg" alt="Night School" class="img-new-arrivals"/>
+							<figcaption>Night School</figcaption>
+						</figure>	
+					</a>
+					<a href="#" class="new-arrivals">
+						<figure>
+							<img src="images/TheWhistler.jpg" alt="The Whistler" class="img-new-arrivals" />
+							<figcaption>The Whistler</figcaption>
+						</figure>
+					</a>
 			<button class="next" >&#10095;</button>	
 		</div>
 	</section>
@@ -228,28 +243,10 @@
 						<figcaption>1984</figcaption>
 					</figure>	
 				</a>
-				<!-- <a href="#" class="best-sellers"> -->
-					<!-- <figure> -->
-						<!-- <img src="images/KaneAndAbel.jpg" alt="Kane And Abel" class="img-best-sellers"/> -->
-						<!-- <figcaption>Kane And Abel</figcaption> -->
-					<!-- </figure>	 -->
-				<!-- </a> -->
-				<!-- <a href="#" class="best-sellers"> -->
-					<!-- <figure> -->
-						<!-- <img src="images/KaneAndAbel.jpg" alt="Kane And Abel" class="img-best-sellers"/> -->
-						<!-- <figcaption>Kane And Abel</figcaption> -->
-					<!-- </figure>	 -->
-				<!-- </a> -->
-				<!-- <a href="#" class="best-sellers"> -->
-					<!-- <figure> -->
-						<!-- <img src="images/KaneAndAbel.jpg" alt="Kane And Abel" class="img-best-sellers"/> -->
-						<!-- <figcaption>Kane And Abel</figcaption> -->
-					<!-- </figure>	 -->
-				<!-- </a> -->
 			<button class="next" >&#10095;</button>
 		</div> 
 	</section> 
-	<section class="row container" id="combined-section-1">
+	<div class="row container" id="combined-section-1">
 	<section class="col-md-6" id="our-collection-section">
 		<div id="our-collection-heading">
 			<h2>OUR COLLECTION</h2>	
@@ -281,24 +278,6 @@
 						<figcaption>The Hunger Games</figcaption>
 					</figure>
 				</a>
-				<!-- <a href="#" class="our-collection"> -->
-					<!-- <figure> -->
-						<!-- <img src="images/DanBrown-DaVinciCode.jpg" alt="Dan Brown" class="img-our-collection" /> -->
-						<!-- <figcaption>Dan Brown</figcaption> -->
-					<!-- </figure> -->
-				<!-- </a> -->
-				<!-- <a href="#" class="our-collection"> -->
-					<!-- <figure> -->
-						<!-- <img src="images/DanBrown-DaVinciCode.jpg" alt="Dan Brown" class="img-our-collection" /> -->
-						<!-- <figcaption>Dan Brown</figcaption> -->
-					<!-- </figure> -->
-				<!-- </a> -->
-				<!-- <a href="#" class="our-collection"> -->
-					<!-- <figure> -->
-						<!-- <img src="images/DanBrown-DaVinciCode.jpg" alt="Dan Brown" class="img-our-collection" /> -->
-						<!-- <figcaption>Dan Brown</figcaption> -->
-					<!-- </figure> -->
-				<!-- </a> -->
 			<button class="next" >&#10095;</button>	
 		</div> 
 	</section>	
@@ -332,28 +311,28 @@
 			<a href="#MarkTwain" class="authors">Mark Twain</a>
 		</div>
 	</section>
-	</section>
-	<section class="row container" id="combined-section-2">
-	<section class="col-md-6" id="map">
+	</div>
+	<div class="row container" id="combined-section-2">
+	<div class="col-md-6" id="map">
 			<img src="images/Map.jpg" alt="Map" height="500"/>
-	</section>	
-	<section class="col-md-6" id="write-to-us">
+	</div>	
+	<div class="col-md-6" id="write-to-us">
 	<section id="write-to-us-heading">
 		<h2>WRITE TO US</h2>
 		<hr>
 	</section>
-	<section>
+	<div>
 		Name : <input id="name" type="text" />
 		E-Mail Id : <input id="email" type="email" />
 		Contact No : <input id="tel" type="tel" />
 		Suggestion : <textarea id="suggestion" cols="21" rows="6"> </textarea>
-	</section>
-	</section>
-	</section>
+	</div>
+	</div>
+	</div>
     </div>  
 	<footer id="combined-section-3">
 		<div class="container">
-			<section class="col-md-12" id="footer-section-1">
+			<div class="col-md-12" id="footer-section-1">
 				<div class="col-md-4" id="footer-left-section-1">
 				<b>HELP</b>
 				<a href="#">Help Center</a>
@@ -368,9 +347,9 @@
 				<p>Sign up to hear about special sales and more delivered to your inbox!</p>
 				<button type="button" class="btn btn-sm btn-default">SIGN UP</button>
 				</div>
-			</section>
+			</div>
 			<hr>
-			<section class="col-md-12" id="footer-section-2">
+			<div class="col-md-12" id="footer-section-2">
 				<div class="col-md-6" id="footer-left-section-2">
 				<span><a href="#">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Privacy Policy</a></span>
 				Copyrights ©2017 All Rights Reserved by La Bibliothèque Inc.
@@ -382,7 +361,7 @@
 					<i class="fa fa-google-plus-circle fa-2x">&nbsp;&nbsp;</i>
 					<i class="fa fa-rss-square fa-2x">&nbsp;&nbsp;</i>
 				</div>
-			</section>
+			</div>
 		</div>
 	</footer>
 </body>

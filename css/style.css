@@ -1,7 +1,8 @@
 
-/* #header{ */
-		/* background-color : white; */
-/* } */
+ #header{ 
+		background-color : white;
+		color : #B6BECB; 
+ } 
 
 /* #ul-main-menu{ */
 	/* display : flex; */
@@ -133,7 +134,7 @@ body{
 	flex-wrap : nowrap;
 	justify-content : center;
 	align-items : center;
-	border : 1px solid black;
+/*	border : 1px solid black;*/
 }
 
 #about-section-image-1{
@@ -195,7 +196,7 @@ body{
 	justify-content : center;
 	align-items : center;
 	font-family: Allerta, serif;
-	border : 1px solid black;
+	/*border : 1px solid black;*/
 }
 
 #new-arrival-heading{
@@ -209,7 +210,7 @@ body{
 	justify-content : space-around;
 	align-items : center;
 	width : 100%;
-	border :1px solid green;
+	/*border :1px solid green;*/
 }
 
 #new-arrival-list a{
@@ -232,19 +233,19 @@ body{
 	align-items : center;
 	padding: 20px 20px 20px 20px;
 	font-family: Allerta, serif;
-	border :1px solid red;
+	/*border :1px solid red;*/
 }
 
 .new-arrivals img{	
 	height : 250px;
 	width : 150px;
-	border : 1px solid lightblue;
+	/*border : 1px solid lightblue;*/
 }	
 
 .new-arrivals figure{	
 	height : 300px;
 	width : 200px;
-	border : 1px solid yellow;
+	/*border : 1px solid yellow;*/
 }
 
 
@@ -257,7 +258,7 @@ body{
 	justify-content : center;
 	align-items : center;
 	font-family: Allerta, serif;
-	border : 1px solid black;
+/*	border : 1px solid black;*/
 }
 
 #best-seller-heading{
@@ -271,7 +272,7 @@ body{
 	width : 100%;
 	justify-content : space-around;
 	align-items : center;
-	border :1px solid green;
+	/*border :1px solid green;*/
 }
 	
 #best-seller-list a{
@@ -293,19 +294,19 @@ body{
 	align-items : center;
 	padding: 20px 20px 20px 20px;
 	font-family: Allerta, serif;
-	border :1px solid red;
+	/*border :1px solid red;*/
 }
 
 .best-sellers img{	
 	height : 250px;
 	width : 150px;
-	border : 1px solid lightblue;
+	/*border : 1px solid lightblue;*/
 }
 
 .best-sellers figure{	
 	height : 300px;
 	width : 200px;
-	border : 1px solid yellow;
+	/*border : 1px solid yellow;*/
 }
 
 #our-collection-section{
@@ -320,7 +321,7 @@ body{
 	justify-content : center;
 	align-items : center;
 	font-family: Allerta, serif;
-	border : 1px solid green;
+	/*border : 1px solid green;*/
 }
 
 #our-collection-heading{
@@ -333,7 +334,7 @@ body{
 	flex-wrap : nowrap;
 	justify-content : space-around;
 	align-items : center; 
-	border :1px solid green;
+	/*border :1px solid green;*/
 } 
 
 #our-collection-list > img{
@@ -360,19 +361,19 @@ body{
 	align-items : center;
 	padding: 10px 10px 10px 10px;
 	font-family: Allerta, serif;
-	border : 1px solid red;
+	/*border : 1px solid red;*/
 }
 
 .our-collection img{	
 	height : 200px;
 	width : 100px;
-	border : 1px solid lightblue;
+	/*border : 1px solid lightblue;*/
 }
 
 .our-collection figure{	
 	height : 250px;
 	width : 150px;
-	border : 1px solid yellow;
+	/*border : 1px solid yellow;*/
 }
 
 #author-section{
@@ -386,7 +387,7 @@ body{
 	align-items : center;
 	flex-basis : 30%;
 	font-family: Allerta, serif;
-	border : 1px solid green;
+	/*border : 1px solid green;*/
 }
 
 #author-section a{
@@ -546,7 +547,7 @@ footer #footer-section-2 #footer-right-section-2{
 	flex-direction : row;
 	flex-wrap : nowrap;
 	height : auto;
-	border : 1px solid black;
+	/*border : 1px solid black;*/
 }
 
 
